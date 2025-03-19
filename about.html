@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Helton Edgar</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+    
+    <header class="header">
+        <nav class="navbar">
+            <ul>
+                <li><a href="about">Sobre-mim</a></li>
+                <li><a href="projects">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="nome">
+            <h2>Helton Edgar</h2>
+        </div>
+    </header>
+
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <!-- <h2>Sobre Mim</h2> -->
+             <p></p>
+             <p></p>
+            <p class="fade-in">Olá! Meu nome é <b> Helton Edgar Vasco</b> e sou um programador web apaixonado por criar experiências digitais incríveis.</p>
+            <p class="fade-in">Minha jornada na programação começou há alguns anos, e desde então, tenho me dedicado a aprender e aprimorar minhas habilidades.</p>
+            <p class="fade-in">Quando não estou codificando, gosto de explorar novas tecnologias, ler sobre design e passar tempo com amigos e família.</p>
+            <p class="fade-in">Atualmente, estou no último ano do curso de <b>Engenharia Informática e Telecomunicações</b> pela Universidade APolitécnica.</p>
+            <p class="fade-in">Onde tenho desenvolvido conhecimentos sólidos em áreas como <b>Redes de Computadores, Sistemas Operacionais, Programação, Banco de Dados e Comunicações de Dados.</b></p> 
+            <p class="fade-in">Descrevo-me como um profissional dedicado e comprometido, com excelente capacidade de aprendizado e adaptação a novos desafios.</p>
+            <p class="fade-in">Além disso, possuo experiência prática adquirida em estágios <b>(soico tv)</b> e projetos acadêmicos, o que me proporcionou uma base sólida para enfrentar desafios reais no mercado de trabalho.</p> 
+            <p class="fade-in"> Acredito que minha formação e minhas competências técnicas, aliadas ao meu desejo de aprendizado contínuo. </p>
+            <p class="fade-in"> <h3>MUITO OBRIGADO</h3></P>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const aboutContainer = document.querySelector('.about-container');
+            const paragraphs = aboutContainer.querySelectorAll('p');
+
+            paragraphs.forEach((paragraph, index) => {
+                setTimeout(() => {
+                    paragraph.classList.add('visible');
+                }, index * 500); // Atraso de 500ms entre cada parágrafo
+            });
+        });
+    </script>
+
+<div class="container-c">
+    <h2 id="contato">contato</h2>
+    <p><i class="fas fa-map-marker-alt"></i> Mozambique, Matola-rio Mozal</p>
+    <p><i class="fas fa-phone"></i>+258 846 530 431</p>
+    <p><i class="fas fa-envelope"></i> <a href="mailto:heltonedgar189@gmail.com">heltonedgar189@gmail.com</a></p>
+    <hr>
+    <footer>
+        <p>Concebido Por <span class="highlight">Helton Edgar</span> | All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

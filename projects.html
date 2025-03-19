@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Helton Edgar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <style>
+        /* Estilos gerais */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* Navbar */
+        .header {
+            background: #333;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .navbar ul li {
+            display: inline;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .navbar ul li a:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .nome h2 {
+            margin: 10px 0 0;
+        }
+
+        /* Seção de projetos */
+        .projects {
+            padding: 100px 20px 50px; /* Espaço para não ficar encoberto pelo navbar fixo */
+        }
+
+        .projects h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        /* Container dos cards */
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        /* Estilo dos cards */
+        .project-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .project-card h3 {
+            font-size: 20px;
+            margin: 15px 0;
+        }
+
+        .project-card p {
+            font-size: 14px;
+            color: #555;
+            margin: 0 15px 15px;
+        }
+
+        .project-card .btn {
+            display: inline-block;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-bottom: 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        .project-card .btn:hover {
+            background-color: #555;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Responsividade */
+        @media (max-width: 900px) {
+            .projects-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .projects-container {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <ul>
+                <li><a href="about">Sobre-mim</a></li>
+                <li><a href="projects">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="nome">
+            <h2>Helton Edgar</h2>
+        </div>
+    </header>
+
+    <section class="projects">
+        <h2>Meus Projetos</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <img src="img/loja E-commer11.png" alt="Projeto 1">
+                <h3>E-Commerce </h3>
+                <p>O e-commerce, ou comércio eletrônico, refere-se à compra e venda de produtos e serviços pela internet.</p>
+                <a href="https://heltonedgar.github.io/E-COMMER-DEMO/" class="btn">Veja Projecto</a>
+            </div>
+            <div class="project-card">
+                <img src="img/desktop.png" alt="Projeto 2">
+                <h3>loja</h3>
+                <p>Uma loja online moderna e intuitiva para facilitar a compra e venda de produtos com segurança e praticidade.</p>
+                <a href="https://footcap-master-xi.vercel.app/" class="btn">Veja Projecto</a>
+            </div>
+            <div class="project-card">
+                <img src="img/WareHouse.png" alt="Projeto 3">
+                <h3>E-Commerce</h3>
+                <p>Uma plataforma imobiliária online para compra, venda e aluguel de imóveis com praticidade e segurança.</p>
+                <a href="https://woodex-master.vercel.app/" class="btn">Veja Projecto</a>
+            </div>
+            <div class="project-card">
+                <img src="img/sistema academico1.jpg" alt="Projeto 4">
+                <h3>Sistema Academico</h3>
+                <p>Um sistema acadêmico refere-se à estrutura e organização das instituições educacionais.</p>
+                <a href="https://heltonedgar.github.io/gym-demo/" class="btn">Veja Projecto</a>
+            </div>
+            <div class="project-card">
+                <img src="img/a.jpg" alt="Projeto 5">
+                <h3>Moto taxi</h3>
+                <p>O mototáxi é um serviço de transporte que utiliza motocicletas para levar passageiros em trajetos curtos, geralmente em áreas urbanas.</p>
+                <a href="https://heltonedgar.github.io/website-demo/" class="btn">Veja Projecto</a>
+            </div>
+            <div class="project-card">
+                <img src="img/cafe1.jpg" alt="Projeto 6">
+                <h3>Cafe</h3>
+                <p>A Cafetaria Acácias é um espaço acolhedor e encantador, dedicado a proporcionar uma experiência única aos amantes do café..</p>
+                <a href="https://cafe-seven-tau.vercel.app/index.html" class="btn">Veja Projecto</a>
+            </div>
+        </div>
+    </section>
+    <div class="container-c">
+        <h2 id="contato">contato</h2>
+        <p><i class="fas fa-map-marker-alt"></i> Mocambique, Matola-rio Mozal</p>
+        <p><i class="fas fa-phone"></i>+258 846 530 431</p>
+        <p><i class="fas fa-envelope"></i> <a href="mailto:Heltonedgar189@gmail.com">heltonedgar189@gmail.com</a></p>
+        <hr>
+        <footer>
+            <p>Concebido Por <span class="highlight">Helton Edgar</span> | All Rights Reserved.</p>
+        </footer>
+
+</body>
+</html>

@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Courier New', Courier, monospace; */
+    
+}
+.header {
+    background: #333;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    font-family: sans-serif;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.navbar ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.nome h2 {
+    margin: 10px 0 0;
+}
+body {
+    background-color: #1e1e1e; /* Cor de fundo escura */
+    color: white; /* Cor padrão do texto */
+    font-family: 'Courier New', Courier, monospace; /* Fonte semelhante a código */
+    padding: 20px;
+    margin-top: 20px; 
+}
+
+.highlight1 {
+    color: #00ffff; /* Azul claro */
+}
+
+
+.about-section {
+    
+    padding: 40px 20px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+    /* color: #333;  */
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+.about-container {
+    max-width: 800px; /* Largura máxima do contêiner */
+    margin: 0 auto; /* Centraliza o contêiner */
+}
+
+.about-section h2 {
+    font-size: 2.5em; /* Tamanho do título */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+.about-section p {
+    font-size: 1.2em; /* Tamanho do texto */
+    line-height: 1.6; /* Altura da linha para melhor legibilidade */
+    margin-bottom: 15px; /* Espaçamento abaixo dos parágrafos */
+}
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+body { 
+    margin-top: 20px;  
+    } 
+
+
+    
+
+.container-c {
+    max-width: 600px;
+    margin: 50px auto;
+    /* padding: 5px; */
+    background: #1e1e1e;
+    border-radius: 8px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    text-align: center;
+}
+
+h2 {
+    color: #ffffff;
+}
+
+p {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+a {
+    color: #f1f1f1;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.highlight {
+    color: rgb(246, 246, 247);
+}
+
+footer {
+    margin-top: 23px;
+    text-align: center;
+    font-size: 14px;
+    color: #fffefe;
+}

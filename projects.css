@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    
+   
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.1); /* Fundo preto semi-transparente */
+}
+
+.header {
+    /* position: fixed;  */
+    background: #055f67; /* Cor de fundo padrão */
+    color: #fff; /* Cor do texto padrão */
+    padding: 10px 20px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: #fff; /* Cor do texto padrão */
+    text-decoration: none;
+    transition: color 0.3s; /* Transição suave para a cor */
+}
+
+.navbar a:hover {
+    color: #4dffc3; 
+}
+
+.nome h2 {
+    margin: 0;
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        font-size: 24px;
+        color: #fff;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: #012023;
+        width: 100%;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .navbar a {
+        color: #fff;
+        transition: color 0.3s; 
+    }
+
+    .navbar a:hover {
+        color: #4dffc3; 
+    }
+}
+ body { 
+margin-top: 20px;  
+} 
+.container-c {
+    max-width: 600px;
+    margin: 50px auto;
+    /* padding: 5px; */
+    background: white;
+    border-radius: 8px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+h2 {
+    color: #004b87;
+}
+
+p {
+    font-size: 16px;
+    color: #333;
+}
+
+a {
+    color: #004b87;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.highlight {
+    color: blue;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+}
